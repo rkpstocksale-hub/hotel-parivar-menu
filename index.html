@@ -1,188 +1,220 @@
 <!doctype html>
-<html lang="mr">
+<html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>हॉटेल परिवार - मेनू</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hotel Parivar Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg: #0b0b0b;
-  --card: #0f0f0f;
-  --gold: #d4af37;
-  --muted: #bfbdb8;
-  --accent: #d4af37;
-  --radius:14px;
-  font-family: 'Poppins', sans-serif;
-}
-*{box-sizing:border-box}
-body{margin:0;background:linear-gradient(180deg,#050505,#0b0b0b);color:var(--muted);}
-.header{display:flex;align-items:center;gap:20px;padding:28px 20px;border-bottom:1px solid rgba(212,175,55,0.08)}
-.logo{width:96px;height:96px;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
-.logo img{width:100%;height:100%;object-fit:cover}
-.brand h1{margin:0;font-size:28px;color:var(--gold);font-weight:700;font-family:'Noto Serif Devanagari', serif}
-.brand p{margin:4px 0 0 0;color:var(--muted)}
-.container{max-width:980px;margin:26px auto;padding:18px}
-.top-info{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
-.badge{background:linear-gradient(90deg, rgba(212,175,55,0.12), rgba(212,175,55,0.06));padding:8px 14px;border-radius:20px;color:var(--gold);font-weight:600}
-
-.menu-grid{display:grid;grid-template-columns:1fr;gap:14px}
-@media(min-width:800px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
-
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;display:flex;align-items:center;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,0.7)}
-.thumb{width:84px;height:84px;border-radius:12px;overflow:hidden;background:#111;display:flex;align-items:center;justify-content:center}
-.thumb img{width:100%;height:100%;object-fit:cover}
-.info{flex:1}
-.mr{font-family:'Noto Serif Devanagari', serif;color:#fff;font-size:18px;font-weight:700}
-.en{color:var(--muted);font-size:13px;margin-top:4px}
-.price{color:var(--gold);font-weight:700;font-size:18px}
-
-.section-title{color:var(--gold);font-size:20px;margin-top:22px;margin-bottom:8px;font-weight:700}
-.footer{text-align:center;color:var(--muted);padding:28px 0 60px 0;font-size:13px}
-.links a{color:var(--gold);text-decoration:none;margin-right:12px;font-weight:600}
-.branch-list a{color:var(--muted);text-decoration:none}
+body{font-family:Poppins;background:#f7fdf8;margin:0}
+header{display:flex;gap:12px;align-items:center;padding:16px;background:white}
+header img{width:70px;border-radius:12px}
+.container{max-width:900px;margin:auto;padding:12px}
+.card{background:white;padding:12px;border-radius:12px;display:flex;gap:12px;margin-bottom:12px;box-shadow:0 4px 10px #0001}
+.thumb img{width:80px;height:80px;object-fit:cover;border-radius:10px}
+.name{font-weight:700}
+.price{color:#1aa34a;font-weight:700}
+.section-title{color:#1aa34a;font-weight:700;font-size:18px;margin-top:20px}
+.link{color:#1aa34a;text-decoration:none}
 </style>
 </head>
 <body>
-<header class="header">
-  <div class="logo"><img src="images/logo.jpg" alt="logo"></div>
-  <div class="brand"><h1>हॉटेल परिवार</h1><p>नारायणगाव • Pune - Nashik Hwy, near Raut Hospital, Irrigation Colony, Narayangaon, Maharashtra 410504</p></div>
-  <div style="margin-left:auto" class="badge">Premium Menu</div>
+<header>
+<img src="images/logo.jpg">
+<div><h2>हॉटेल परिवार, नारायणगाव</h2><div>स्कॅन करा आणि मेनू पहा</div></div>
 </header>
 
-<main class="container">
-  <div class="top-info">
-    <div class="links"><a href="https://www.facebook.com/HotelPariwar/" target="_blank">Facebook</a><a href="https://www.instagram.com/hotel_pariwar/?hl=en" target="_blank">Instagram</a><a href="https://www.youtube.com/channel/UCT1eBfExVw0fzxi4gFNuL8A" target="_blank">YouTube</a></div>
-    <div style="color:var(--muted)">+91 98607 07875</div>
-  </div>
+<div class="container">
+<h3 class="section-title">मुख्य पदार्थ / Main</h3>
 
-  <div class="section-title">मेनू / Menu</div>
-  <div class="menu-grid">
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>मिसळ</div>
+        <div class='desc'>Misal</div>
+      </div>
+      <div class='price'>₹80</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>कढीवडा</div>
+        <div class='desc'>Kadhi Vada</div>
+      </div>
+      <div class='price'>₹70</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>स्पेशल मिसळ</div>
+        <div class='desc'>Special Misal</div>
+      </div>
+      <div class='price'>₹120</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>स्पेशल कढीवडा</div>
+        <div class='desc'>Special Kadhi Vada</div>
+      </div>
+      <div class='price'>₹130</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>बटाटा भजी</div>
+        <div class='desc'>Potato Bhaji</div>
+      </div>
+      <div class='price'>₹50</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>कांदा भजी</div>
+        <div class='desc'>Onion Bhaji</div>
+      </div>
+      <div class='price'>₹50</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>मुग भजी</div>
+        <div class='desc'>Mung Bhaji</div>
+      </div>
+      <div class='price'>₹60</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>साबुदाणा खिचडी</div>
+        <div class='desc'>Sabudana Khichdi</div>
+      </div>
+      <div class='price'>₹70</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>साबुदाणा वडा</div>
+        <div class='desc'>Sabudana Vada</div>
+      </div>
+      <div class='price'>₹65</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>पोहे</div>
+        <div class='desc'>Pohe</div>
+      </div>
+      <div class='price'>₹45</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>मटकी भेळ</div>
+        <div class='desc'>Matki Bhel</div>
+      </div>
+      <div class='price'>₹90</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>ओली भेळ</div>
+        <div class='desc'>Oli Bhel</div>
+      </div>
+      <div class='price'>₹85</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>सुकी भेळ</div>
+        <div class='desc'>Sukhi Bhel</div>
+      </div>
+      <div class='price'>₹60</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>चहा</div>
+        <div class='desc'>Tea</div>
+      </div>
+      <div class='price'>₹15</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>स्पेशल चहा</div>
+        <div class='desc'>Special Tea</div>
+      </div>
+      <div class='price'>₹25</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>कॉफी</div>
+        <div class='desc'>Coffee</div>
+      </div>
+      <div class='price'>₹30</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>कोल्ड ड्रिंक</div>
+        <div class='desc'>Cold Drink</div>
+      </div>
+      <div class='price'>₹40</div>
+    </article>
+    
+    <article class='card'>
+      <div class='thumb'><img src="images/placeholder.jpg"></div>
+      <div class='info'>
+        <div class='name'>आईस्क्रीम</div>
+        <div class='desc'>Ice Cream</div>
+      </div>
+      <div class='price'>₹50</div>
+    </article>
+    
 
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Misal"></div>
-      <div class="info"><div class="mr">मिसळ</div><div class="en">Misal</div></div>
-      <div class="price">₹80</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Kadhi Vada"></div>
-      <div class="info"><div class="mr">कढीवडा</div><div class="en">Kadhi Vada</div></div>
-      <div class="price">₹70</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Special Misal"></div>
-      <div class="info"><div class="mr">स्पेशल मिसळ</div><div class="en">Special Misal</div></div>
-      <div class="price">₹120</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Special Kadhi Vada"></div>
-      <div class="info"><div class="mr">स्पेशल कढीवडा</div><div class="en">Special Kadhi Vada</div></div>
-      <div class="price">₹130</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Potato Bhaji"></div>
-      <div class="info"><div class="mr">बटाटा भजी</div><div class="en">Potato Bhaji</div></div>
-      <div class="price">₹50</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Onion Bhaji"></div>
-      <div class="info"><div class="mr">कांदा भजी</div><div class="en">Onion Bhaji</div></div>
-      <div class="price">₹50</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Mung Bhaji"></div>
-      <div class="info"><div class="mr">मुग भजी</div><div class="en">Mung Bhaji</div></div>
-      <div class="price">₹60</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Sabudana Khichdi"></div>
-      <div class="info"><div class="mr">साबुदाणा खिचडी</div><div class="en">Sabudana Khichdi</div></div>
-      <div class="price">₹70</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Sabudana Vada"></div>
-      <div class="info"><div class="mr">साबुदाणा वडा</div><div class="en">Sabudana Vada</div></div>
-      <div class="price">₹65</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Pohe"></div>
-      <div class="info"><div class="mr">पोहे</div><div class="en">Pohe</div></div>
-      <div class="price">₹45</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Matki Bhel"></div>
-      <div class="info"><div class="mr">मटकी भेळ</div><div class="en">Matki Bhel</div></div>
-      <div class="price">₹90</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Oli Bhel"></div>
-      <div class="info"><div class="mr">ओली भेळ</div><div class="en">Oli Bhel</div></div>
-      <div class="price">₹85</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Sukhi Bhel"></div>
-      <div class="info"><div class="mr">सुकी भेळ</div><div class="en">Sukhi Bhel</div></div>
-      <div class="price">₹60</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Tea"></div>
-      <div class="info"><div class="mr">चहा</div><div class="en">Tea</div></div>
-      <div class="price">₹15</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Special Tea"></div>
-      <div class="info"><div class="mr">स्पेशल चहा</div><div class="en">Special Tea</div></div>
-      <div class="price">₹25</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Coffee"></div>
-      <div class="info"><div class="mr">कॉफी</div><div class="en">Coffee</div></div>
-      <div class="price">₹30</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Cold Drink"></div>
-      <div class="info"><div class="mr">कोल्ड ड्रिंक</div><div class="en">Cold Drink</div></div>
-      <div class="price">₹40</div>
-    </article>
-    
-    <article class="card">
-      <div class="thumb"><img src="images/placeholder.jpg" alt="Ice Cream"></div>
-      <div class="info"><div class="mr">आईस्क्रीम</div><div class="en">Ice Cream</div></div>
-      <div class="price">₹50</div>
-    </article>
-    
-  </div>
+<h3 class="section-title">पत्ता / Address</h3>
+<div>Pune - Nashik Hwy, near Raut Hospital, Irrigation Colony, Narayangaon, Maharashtra 410504</div>
 
-  <div class="section-title">शाखा / Branches</div>
-  <ul class="branch-list">
-<li style="margin-bottom:8px"><a href="https://maps.app.goo.gl/AeMkzUfFvEju6af87" target="_blank">MOSHI BRANCH</a></li>
-<li style="margin-bottom:8px"><a href="https://maps.app.goo.gl/MZxWhCQNzZRcG5sD7" target="_blank">PIMPRI</a></li>
-<li style="margin-bottom:8px"><a href="https://maps.app.goo.gl/JvdpYe3TUZRD3PVm7" target="_blank">DHOLE PATIL RD</a></li>
-<li style="margin-bottom:8px"><a href="https://maps.app.goo.gl/fDdgAbSXyot1t5wS7" target="_blank">DHAYARI SINGHGAD ROAD</a></li>
-<li style="margin-bottom:8px"><a href="https://maps.app.goo.gl/guqdRstnaL92KTtXA" target="_blank">KARVE ROAD</a></li>
-<li style="margin-bottom:8px"><a href="https://maps.app.goo.gl/NwUiMbkJhPpMDN3T6" target="_blank">SANGAMNER</a></li>
-<li style="margin-bottom:8px"><a href="https://maps.app.goo.gl/bYR84wAumpcWxmRM8" target="_blank">THANE</a></li>
+<h3 class="section-title">संपर्क / Contact</h3>
+<div>+91 9860707875</div>
 
-  </ul>
+<h3 class="section-title">Social</h3>
+<div>
+<a class='link' href="https://www.facebook.com/HotelPariwar/">Facebook</a> |
+<a class='link' href="https://www.instagram.com/hotel_pariwar/?hl=en">Instagram</a> |
+<a class='link' href="https://www.youtube.com/channel/UCT1eBfExVw0fzxi4gFNuL8A">YouTube</a>
+</div>
 
-  <div style="height:24px"></div>
-  <div class="footer">© हॉटेल परिवार — नारायणगाव • +91 98607 07875</div>
-</main>
+<h3 class="section-title">शाखा / Branches</h3>
+<ul>
+<li><a class="link" href="https://maps.app.goo.gl/AeMkzUfFvEju6af87" target="_blank">MOSHI BRANCH</a></li>
+<li><a class="link" href="https://maps.app.goo.gl/MZxWhCQNzZRcG5sD7" target="_blank">PIMPRI</a></li>
+<li><a class="link" href="https://maps.app.goo.gl/JvdpYe3TUZRD3PVm7" target="_blank">DHOLE PATIL RD</a></li>
+<li><a class="link" href="https://maps.app.goo.gl/fDdgAbSXyot1t5wS7" target="_blank">DHAYARI SINGHGAD ROAD</a></li>
+<li><a class="link" href="https://maps.app.goo.gl/guqdRstnaL92KTtXA" target="_blank">KARVE ROAD</a></li>
+<li><a class="link" href="https://maps.app.goo.gl/NwUiMbkJhPpMDN3T6" target="_blank">SANGAMNER</a></li>
+<li><a class="link" href="https://maps.app.goo.gl/bYR84wAumpcWxmRM8" target="_blank">THANE</a></li>
+
+</ul>
+
+</div>
 </body>
 </html>
